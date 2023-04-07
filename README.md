@@ -36,19 +36,19 @@ font-face
     font-weight: 400;
     font-style: normal;
     font-display: swap;
-    src: url('https://cdn.jsdelivr.net/gh/fonts-archive/TmoneyRoundWind/TmoneyRoundWindRegular.otf') format('opentype'),
-         url('https://cdn.jsdelivr.net/gh/fonts-archive/TmoneyRoundWind/TmoneyRoundWindRegular.ttf') format('truetype'),
+    src: url('https://cdn.jsdelivr.net/gh/fonts-archive/TmoneyRoundWind/TmoneyRoundWindRegular.woff2') format('woff2'),
          url('https://cdn.jsdelivr.net/gh/fonts-archive/TmoneyRoundWind/TmoneyRoundWindRegular.woff') format('woff'),
-         url('https://cdn.jsdelivr.net/gh/fonts-archive/TmoneyRoundWind/TmoneyRoundWindRegular.woff2') format('woff2');
+         url('https://cdn.jsdelivr.net/gh/fonts-archive/TmoneyRoundWind/TmoneyRoundWindRegular.otf') format('opentype'),
+         url('https://cdn.jsdelivr.net/gh/fonts-archive/TmoneyRoundWind/TmoneyRoundWindRegular.ttf') format('truetype');
 }
 @font-face {
     font-family: 'Tmoney Round Wind';
     font-weight: 800;
     font-style: normal;
     font-display: swap;
-    src: url('https://cdn.jsdelivr.net/gh/fonts-archive/TmoneyRoundWind/TmoneyRoundWindExtraBold.otf') format('opentype'),
-         url('https://cdn.jsdelivr.net/gh/fonts-archive/TmoneyRoundWind/TmoneyRoundWindExtraBold.ttf') format('truetype'),
+    src: url('https://cdn.jsdelivr.net/gh/fonts-archive/TmoneyRoundWind/TmoneyRoundWindExtraBold.woff2') format('woff2'),
          url('https://cdn.jsdelivr.net/gh/fonts-archive/TmoneyRoundWind/TmoneyRoundWindExtraBold.woff') format('woff'),
-         url('https://cdn.jsdelivr.net/gh/fonts-archive/TmoneyRoundWind/TmoneyRoundWindExtraBold.woff2') format('woff2');
+         url('https://cdn.jsdelivr.net/gh/fonts-archive/TmoneyRoundWind/TmoneyRoundWindExtraBold.otf') format('opentype'),
+         url('https://cdn.jsdelivr.net/gh/fonts-archive/TmoneyRoundWind/TmoneyRoundWindExtraBold.ttf') format('truetype');
 }
 ```

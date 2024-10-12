@@ -1,61 +1,92 @@
-# Tmoney Round Wind
+# 티머니 둥근바람
 
-[Visit Source](https://www.tmoney.co.kr/aeb/cmnctn/ci/ci.dev)
+[배포처 바로가기](https://www.tmoney.co.kr/aeb/cmnctn/ci/ci.dev)
 
 &nbsp;
+
+## 웹 폰트
+
+사용하는 `font-family`의 이름은 `Tmoney Round Wind`입니다.
+
+### HTML
+
+```html
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/fonts-archive/TmoneyRoundWind/TmoneyRoundWind.css"
+  type="text/css"
+/>
+```
+
+### CSS `@Import`
+
+```css
+@import url("https://cdn.jsdelivr.net/gh/fonts-archive/TmoneyRoundWind/TmoneyRoundWind.css");
+```
+
+### CSS `@font-face`
+
+```css
+@font-face {
+  font-family: 'Tmoney Round Wind';
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url('https://cdn.jsdelivr.net/gh/fonts-archive/TmoneyRoundWind/TmoneyRoundWindRegular.woff2') format('woff2'),
+        url('https://cdn.jsdelivr.net/gh/fonts-archive/TmoneyRoundWind/TmoneyRoundWindRegular.woff') format('woff'),
+        url('https://cdn.jsdelivr.net/gh/fonts-archive/TmoneyRoundWind/TmoneyRoundWindRegular.otf') format('opentype'),
+        url('https://cdn.jsdelivr.net/gh/fonts-archive/TmoneyRoundWind/TmoneyRoundWindRegular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Tmoney Round Wind';
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+  src: url('https://cdn.jsdelivr.net/gh/fonts-archive/TmoneyRoundWind/TmoneyRoundWindExtraBold.woff2') format('woff2'),
+        url('https://cdn.jsdelivr.net/gh/fonts-archive/TmoneyRoundWind/TmoneyRoundWindExtraBold.woff') format('woff'),
+        url('https://cdn.jsdelivr.net/gh/fonts-archive/TmoneyRoundWind/TmoneyRoundWindExtraBold.otf') format('opentype'),
+        url('https://cdn.jsdelivr.net/gh/fonts-archive/TmoneyRoundWind/TmoneyRoundWindExtraBold.ttf') format('truetype');
+}
+```
+
+&nbsp;
+
+## 다이나믹 서브셋
+
+웹폰트의 최적화를 위해 모던 브라우저에서는 글리프를 여러개로 나누어 필요한 부분만 동적으로 파싱하는 다이나믹 서브셋을 제공합니다. 폰트의 용량이 부담된다면 아래 코드를 사용하는 걸 추천합니다.
+
+### HTML
+
+```html
+<link 
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/fonts-archive/TmoneyRoundWind/subsets/TmoneyRoundWind-dynamic-subset.css"
+  type="text/css"
+/>
+```
 
 ### CSS
 
-```
-font-family: 'Tmoney Round Wind';
-```
-
-&nbsp;
-
-### link
-
-```
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fonts-archive/TmoneyRoundWind/TmoneyRoundWind.css" type="text/css"/>
+```css
+@import url("https://cdn.jsdelivr.net/gh/fonts-archive/TmoneyRoundWind/subsets/TmoneyRoundWind-dynamic-subset.css");
 ```
 
 &nbsp;
 
-### import
+## font-family
 
-```
-@import url('https://cdn.jsdelivr.net/gh/fonts-archive/TmoneyRoundWind/TmoneyRoundWind.css');
-```
+어느 브라우저나 시스템 환경에서도 동일한 폰트가 적용되어야 한다면 아래와 같이 구성하는 걸 추천합니다. `-apple-system`과 `BlinkMacSystemFont`는 맥, `Segoe UI`는 윈도우, `Roboto`는 안드로이드의 기본 폰트입니다.
 
-&nbsp;
-
-### font-face
-
-```
-@font-face {
-    font-family: 'Tmoney Round Wind';
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
-    src: url('https://cdn.jsdelivr.net/gh/fonts-archive/TmoneyRoundWind/TmoneyRoundWindRegular.woff2') format('woff2'),
-         url('https://cdn.jsdelivr.net/gh/fonts-archive/TmoneyRoundWind/TmoneyRoundWindRegular.woff') format('woff'),
-         url('https://cdn.jsdelivr.net/gh/fonts-archive/TmoneyRoundWind/TmoneyRoundWindRegular.otf') format('opentype'),
-         url('https://cdn.jsdelivr.net/gh/fonts-archive/TmoneyRoundWind/TmoneyRoundWindRegular.ttf') format('truetype');
-}
-@font-face {
-    font-family: 'Tmoney Round Wind';
-    font-weight: 800;
-    font-style: normal;
-    font-display: swap;
-    src: url('https://cdn.jsdelivr.net/gh/fonts-archive/TmoneyRoundWind/TmoneyRoundWindExtraBold.woff2') format('woff2'),
-         url('https://cdn.jsdelivr.net/gh/fonts-archive/TmoneyRoundWind/TmoneyRoundWindExtraBold.woff') format('woff'),
-         url('https://cdn.jsdelivr.net/gh/fonts-archive/TmoneyRoundWind/TmoneyRoundWindExtraBold.otf') format('opentype'),
-         url('https://cdn.jsdelivr.net/gh/fonts-archive/TmoneyRoundWind/TmoneyRoundWindExtraBold.ttf') format('truetype');
-}
+```css
+font-family: "Tmoney Round Wind", -apple-system, BlinkMacSystemFont, "Segoe UI",
+  Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 ```
 
 &nbsp;
 
-### 라이센스 본문
+## 라이선스
+
+라이선스는 언제든지 변경될 수 있습니다. 변경사항을 확인하려면 배포처를 방문해 주세요.
 
 ```
 1. 저작권 
